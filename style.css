@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@400;700&display=swap');
+
+:root {
+    --fSeriff: 'Roboto Serif', serif;
+    --fSseriff: 'Roboto', sans-serif;
+    --pretoHeader: #252525;
+    --pretoFonte: #3A342F;
+    --pinkFonte: #FD6A9A;
+    --pinkFooter: #EB4A7B;
+    font-size: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: var(--pretoHeader);
+    color: white;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+    width: 11vw;
+    justify-content: space-between;
+}
+
+header figure figcaption {
+    font-size: 2.6rem;
+    font-family: var(--fSeriff);
+    font-weight: 700;
+}
+
+header figure img {
+    width: 35px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13vw;
+}
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+h2 {
+    font-size: 4.9rem;
+    font-family: var(--fSeriff);
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--fSeriff);
+    font-size: 2.4rem;
+    display: inline-block;
+}
+
+p {
+    font-size: 2.7rem;
+    font-family: var(--fSseriff);
+}
+
+button {
+    font-size: 2.7rem;
+    font-family: var(--fSseriff);
+    width: 248px;
+    height: 81px;
+    border-radius: 44px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f2f3;
+    font-family: var(--fSseriff);
+    font-size: 1.4rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 424px;
+    height: 460px;
+    text-align: left;
+}
+
+.primeiraSecao {
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--pinkFonte);
+    background-image: url('./assets/img/Grupo 486.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+}
+
+.primeiraSecao h1 {
+    font-size: 5.1rem;
+    width: 90vw;
+    white-space: pre-line;
+    font-family: var(--fSeriff);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.primeiraSecao figure {
+    position: relative;
+    bottom: 250px;
+}
+
+.primeiraSecao figure img {
+    width: 150px;
+}
+
+.segundaSecao {
+    align-items: flex-start;
+    padding-left: 5vw;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/img/Interseção 16.png');
+    background-repeat: no-repeat;
+    background-color: #f4f2f3;
+    background-size: contain;
+    background-position: bottom right;
+}
+
+.segundaSecao h2 {
+    color: var(--pretoFonte);
+}
+
+.segundaSecao p {
+    color: var(--pretoFonte);
+}
+
+.segundaSecao button {
+    background-color: var(--pretoFonte);
+    color: #f4f2f3;
+}
+
+.terceiraSecao {
+    align-items: flex-end;
+    padding-right: 61px;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/img/Grupo 480.png');
+    background-repeat: no-repeat;
+    background-color: var(--pinkFonte);
+    background-size: cover;
+}
+
+.terceiraSecao h2 {
+    color: white;
+
+}
+
+.terceiraSecao p {
+    color: #f4f2f3;
+}
+
+.terceiraSecao button {
+    color: var(--pretoFonte);
+}
+
+
+.apoio {
+    flex-direction: row;
+    height: 15vh;
+    width: 70vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.apoio figure {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apoio h3 {
+    font-weight: 400;
+    color: var(--pinkFonte);
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    width: 100%;
+    background-color: var(--pinkFooter);
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    color: #f4f2f3;
+}
+
+.fContainer {
+    display: none;
+}
+
+@media screen and (max-width:580px) {
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        gap: 250px;
+    }
+
+    header figure figcaption {
+
+        font-size: 2rem;
+    }
+
+    header figure img {
+        width: 50px;
+    }
+
+    header nav a:not(:nth-child(3)) {
+        display: none;
+    }
+
+    header nav a img {
+        width: 40px;
+    }
+
+    /*main*/
+
+    h2 {
+        font-size: 2.6rem
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 2rem;
+        width: 178px;
+        height: 61px;
+    }
+
+    .primeiraSecao {
+        background-image: url('./assets/img/mobile/Grupo 485.png');
+
+    }
+
+    .sContainer {
+        width: 80vw;
+        height: 30vh;
+        position: relative;
+        top: 100px;
+    }
+
+    .primeiraSecao h1 {
+        font-size: 3.5rem;
+        width: 95vw;
+        position: relative;
+        bottom: 90px;
+    }
+
+    .primeiraSecao figure {
+        bottom: 300px
+    }
+
+    .primeiraSecao figure img {
+        width: 120px;
+    }
+
+    .segundaSecao {
+        background-image: url('./assets/img/mobile/Grupo 484.png');
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .terceiraSecao {
+        background-image: url('./assets/img/mobile/Grupo 496.png');
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .apoio {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+
+    .apoio figure {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .fContainer {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    .fContainer figure {
+        display: flex;
+        align-items: center;
+    }
+
+    .fContainer figure figcaption {
+        font-size: 2rem;
+        font-family: var(--fSeriff);
+        font-weight: 700;
+    }
+
+    .fContainer figure img {
+        width: 50px;
+    }
+
+    .fContainer nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35vw;
+    }
+
+    footer section:nth-child(2) {
+        flex-direction: column;
+        padding: 0;
+        height: 50vh;
+    }
+
+}
