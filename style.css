@@ -7,7 +7,7 @@
     --pretoFonte: #3A342F;
     --pinkFonte: #FD6A9A;
     --pinkFooter: #EB4A7B;
-    font-size: 10px;
+    font-size: 62.5%;
 
 }
 
@@ -80,7 +80,8 @@ h3 {
 }
 
 p {
-    font-size: 2.7rem;
+    /* font-size: 2.7rem; */
+    font-size:  2.7rem;
     font-family: var(--fSseriff);
 }
 
@@ -221,6 +222,7 @@ section {
 .apoio h3 {
     font-weight: 400;
     color: var(--pinkFonte);
+    font-style: italic;
 }
 
 /*FOOTER*/
@@ -276,15 +278,17 @@ footer section {
     h2 {
         font-size: 2.6rem
     }
+  
 
     p {
-        font-size: 2rem;
+        
+        font-size: min(5vw, 2.1rem)
     }
 
     button {
-        font-size: 2rem;
-        width: 178px;
-        height: 61px;
+        font-size: 1.8rem;
+        width: 150px;
+        height: 50px;
     }
 
     .primeiraSecao {
@@ -293,25 +297,25 @@ footer section {
     }
 
     .sContainer {
-        width: 80vw;
-        height: 30vh;
+        width: 75vw;
+        height: 35vh;
         position: relative;
         top: 100px;
     }
 
     .primeiraSecao h1 {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         width: 95vw;
         position: relative;
-        bottom: 90px;
+        bottom: 70px;
     }
 
     .primeiraSecao figure {
-        bottom: 300px
+        bottom: 250px
     }
 
     .primeiraSecao figure img {
-        width: 120px;
+        width: 110px;
     }
 
     .segundaSecao {
